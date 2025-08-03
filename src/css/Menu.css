@@ -1,0 +1,17 @@
+.menu-container{
+    background-color: rgb(231, 144, 144);
+    min-height: calc(100vh - 95px);
+    padding: 20px;
+}
+
+.menu-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.menu-container p {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+}
