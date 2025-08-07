@@ -42,6 +42,7 @@
 .nav-ctrl .nav-item {
     display: inline-flex;
     align-items: center;
+    text-decoration: none;
     padding: 0 10px;
     font-family: 'Arial', sans-serif;
     color: rgb(130, 0, 36);

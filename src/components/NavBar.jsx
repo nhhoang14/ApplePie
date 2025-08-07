@@ -5,25 +5,23 @@ import { Link, useLocation } from 'react-router-dom';
 function NavBar() {
   const location = useLocation();
 
-  const handleLogoClick = () => {
-    // Nếu đang ở trang home, scroll lên đầu
-    if (location.pathname === '/') {
+  const handleNavClick = (path) => {
+    if (location.pathname === path) {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-    // Nếu ở trang khác (/menu, /about...), Link sẽ tự động navigate về home
   };
 
   return (
     <div className="navbar-container">
       <div className="main-navbar">
-        <Link to="/" className="logo-navbar" onClick={handleLogoClick}>
+        <Link to="/" className="logo-navbar" onClick={() => handleNavClick('/')}>
           <img src={logo} alt="Logo" className="logo" />
         </Link>
         <div className="nav-ctrl">
-          <Link to="/menu" className="nav-item">Thực đơn</Link>
-          <Link to="/about" className="nav-item">Giới thiệu</Link>
-          <Link to="/services" className="nav-item">Dịch vụ</Link>
-          <Link to="/contact" className="nav-item">Liên hệ</Link>
+          <Link to="/menu" className="nav-item" onClick={() => handleNavClick('/menu')}>Thực đơn</Link>
+          <Link to="/about" className="nav-item" onClick={() => handleNavClick('/about')}>Giới thiệu</Link>
+          <Link to="/services" className="nav-item" onClick={() => handleNavClick('/services')}>Dịch vụ</Link>
+          <Link to="/contact" className="nav-item" onClick={() => handleNavClick('/contact')}>Liên hệ</Link>
         </div>
       </div>
       <div className="sub-navbar">
