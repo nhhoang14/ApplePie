@@ -1,0 +1,42 @@
+.slide-card{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Coiny', cursive;
+    color: #820024;
+    cursor: pointer;
+    will-change: transform;
+    transition: all 0.3s ease-in-out;
+}
+
+.slide-card:hover {
+    transform: scale(1.05);
+}
+
+.slide-card .name-tag{
+    font-size: 24px;
+    font-weight: bold;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%; */
+}
+
+.card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.card-image .cake-image {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+}

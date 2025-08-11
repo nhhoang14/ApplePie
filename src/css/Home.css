@@ -50,11 +50,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    font-family: 'Coiny';
+    font-family: 'Coiny', cursive;
     font-size: 36px;
     transform: translate(-50%, -50%);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
     text-align: center;
     color: #fff;
 }
